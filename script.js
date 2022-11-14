@@ -3,7 +3,7 @@ const videodiv = document.getElementById("videos")
 
 console.log(peer);
 
-navigator.mediaDevices.getUserMedia({video:true})
+navigator.mediaDevices.getUserMedia({video:true,audio:true})
   .then((stream) => {
     window.video = stream
     const video = document.createElement("video")
